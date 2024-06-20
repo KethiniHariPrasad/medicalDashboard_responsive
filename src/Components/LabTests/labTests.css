@@ -1,0 +1,39 @@
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.gridItem {
+  text-align: center;
+  border: 1px solid #ccc;
+  height: 200px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.gridItem:hover {
+  transform: scale(1.15);
+}
+
+.testImage {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media (max-width: 600px) {
+  .gridItem {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .testImage {
+    width: 60px;
+    height: 60px;
+  }
+}

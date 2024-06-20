@@ -1,0 +1,51 @@
+.banner {
+  width: 100%;
+  margin: 5px;
+  border: 1px solid #ccc;
+  min-height: 25vh;
+  background-color: coral;
+  border-radius: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.bannerImg {
+  height: 25vh;
+  clip-path: circle(50%);
+  flex: 1;
+  max-width: 20%;
+}
+
+.bannerText {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  font-size: 2rem;
+  flex: 1;
+  font-family: Georgia, serif;
+  text-align: center;
+  overflow: hidden;
+}
+
+.bannerText p {
+  color: white;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+
+  .bannerImg,
+  .bannerText {
+    width: 50%;
+    max-width: 100%;
+    font-size: 1rem;
+  }
+}

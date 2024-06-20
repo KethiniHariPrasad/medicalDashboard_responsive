@@ -1,0 +1,30 @@
+#mainContainer {
+  margin: 0 auto;
+  padding: 1vw;
+  background-color: #e8f3f2;
+}
+
+#headerDiv {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-size: 1rem;
+}
+
+#alertContent {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #d862bc;
+  background-color: #f8d8eb;
+}
+
+.contentHeadDiv {
+  display: flex;
+  margin-top: 0.5vh;
+  width: 100%;
+}

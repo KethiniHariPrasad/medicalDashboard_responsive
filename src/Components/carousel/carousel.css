@@ -1,0 +1,56 @@
+/* MyCarousel.css */
+
+.carousel-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  /* Center the carousel */
+}
+
+.slick-prev,
+.slick-next {
+  font-size: 2rem;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #7bd3ea;
+
+  font-size: 2rem;
+}
+.slick-next:hover,
+.slick-prev:hover {
+  color: black;
+}
+
+.slick-prev {
+  left: 0;
+  margin-left: 10px;
+}
+
+.slick-next {
+  right: 0;
+  margin-right: 10px;
+}
+
+.slideContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 20vh;
+  width: 20vw;
+  margin: 0 5px;
+  border: 1px solid;
+  border-radius: 15px;
+}
+
+.slideContent {
+  padding: 2vh;
+}
+
+.carouselImage {
+  border: 1px solid #352e2e;
+  padding: 10px;
+  border-radius: 15px;
+}
